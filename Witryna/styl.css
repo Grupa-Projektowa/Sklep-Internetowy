@@ -9,17 +9,17 @@
 line-height: 1.6em; }*/
 
 /* ustawienia ogólne */
-body { background: #222222;
+body { background: #ffffff;
 font: 0.625em/1.5em arial, tahoma, verdana, sans-serif; }
 
 /* szerokoœæ strony */
 .content { width: 980px; margin: 0 auto; overflow: hidden; }
 
-p, a, li { color: #c1ffc1; font-size: 1.4em;
+p, a, li { color: #000080; font-size: 1.4em;
 font-family: arial, tahoma, verdana, sans-serif; }
 
 header { background: black; width:100%; height: 200px; }/* header */
-section { background: #ddd8d8; width:80%; height: 800px; float: right; }
-aside { background: #453535; width:20%; height: 800px; float: left; }
-footer { background: black; width:100%; height: 100px; clear: both; }
+section { background: green; width:80%; height: 800px; float: right; }
+aside { background: orange; width:20%; height: 800px; float: left; }
+footer { background: red; width:100%; height: 100px; clear: both; }
 p { font: 14px Arial, sans-serif; color: red; text-align: center; }
