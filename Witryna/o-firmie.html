@@ -1,0 +1,129 @@
+
+<html lang="pl">
+<meta charset="utf-8"> 
+
+
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="Sklep z akcesoriami komputerowymi" content="" />
+		<meta name="sklep, akcesoria, komputer" content="" />
+		<title>KOMP-AKCS Akcesoria komputerowe</title>
+		<link rel="stylesheet" href="styl.css" type="text/css" />
+		<link rel="shortcut icon" href="favicon.gif" type="image/x-icon" />
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript">
+	
+	var numer = Math.floor(Math.random()*3)+1;
+	
+	var timer1=0;
+	var timer2=0;
+	
+	function ustawslajd(nrslajdu)
+	{
+		clearTimeout(timer1);
+		clearTimeout(timer2);
+		numer=nrslajdu-1;
+		
+		
+		schowaj();
+		setTimeout("zmienslajd()",500)
+	
+	}
+	
+	function schowaj()
+	{
+		$("#slider").fadeOut(500);
+	
+	}
+	
+	function zmienslajd()
+	{
+		numer++; if (numer>3) numer=1;
+		var plik = "<img src=\"slajdy/promo" + numer + ".png\" />";
+		document.getElementById("slider").innerHTML = plik;
+		$("#slider").fadeIn(500);
+		
+		
+		timer1 = setTimeout("zmienslajd()", 5000);
+		timer2 = setTimeout("schowaj()", 4500);
+	
+	
+	}
+	
+	</script>
+	</head>
+
+<body onload="zmienslajd()">
+
+	<header>
+		<div class="content">
+		<h1><a href="index.html"><img src="akcesoria/opcja.png" alt="opis obrazka" title="Strona główna" /></a></h1>
+		<p></p>
+		</div>
+	</header>
+	
+
+	<div id="main">
+	<div class="content" style="font-size: 16px;
+			color: white;">
+	<center><span onclick="ustawslajd(1)" style="cursor:pointer;">[1]</span>
+	<span onclick="ustawslajd(2)" style="cursor:pointer;">[2]</span>
+	<span onclick="ustawslajd(3)" style="cursor:pointer;">[3]</span>
+	<div id="slider" style="padding-top: 5px; padding-bottom: 7px;"></div></center>
+		<section>
+			<div class="text"><font color="black"> 
+
+				MaxCom S.A. jest nowoczesnym, dynamicznie rozwijającym się przedsiębiorstwem, zajmującym się produkcją oraz ciągłym udoskonalaniem urządzeń telekomunikacyjnych, głównie telefonów komórkowych GSM,  aparatów telefonicznych przewodowych i bezprzewodowych, radiotelefonów PMR typu walkie-talkie, oraz nawigacji satelitarnych GPS.
+
+				Firma MaxCom jako pierwsza wprowadziła na polski rynek w 2008 roku przyjazne dla użytkownika, ergonomiczne telefony komórkowe GSM z dużymi klawiszami.Telefony te posiadają funkcję SOS, dzięki której użytkownik może poczuć się bezpiecznie w każdej sytuacji. Wystarczy wcisnąć jeden przycisk, aby w raziekonieczności szybko wezwać pomoc.
+
+				Wysoki poziom fachowej wiedzy oraz zdobyte wieloletnie doświadczenie w branżach: elektronicznej i IT pozwala nam na realizację oczekiwań naszych Klientów. Kierujemy się przede wszystkim dobrem i potrzebami Klienta. Poprzez nieustanny rozwój gwarantujemy najwyższą jakość produktów oraz ich nowoczesność.
+
+				Dbamy by nasze produkty były niezawodne, bezpieczne oraz łatwe w użyciu, a jednocześnie nowoczesne.
+
+				Należymy aktualnie do  liderów w Europie pod względem liczby sprzedawanych aparatów telefonicznych, ich nowoczesnego wyglądu oraz zaawansowanych funkcji i technologii.
+
+				Wszystkie nasze urządzenia oferowane na rynek Europejski, posiadają certyfikaty zgodności, dopuszczające je do użytku w kraju oraz na terenie Unii Europejskiej. Jesteśmy pionierami we wprowadzaniu najbardziej nowatorskich rozwiązań dla wymagających  Klientów.
+
+				Potwierdzeniem najwyższej jakości produktów MaxCom jest ich znakomita sprzedaż u operatorów telekomunikacyjnych, praktycznie we wszystkich sieciach handlowych w naszym kraju, w sklepach specjalistycznych oraz u dystrybutorów i dealerów, a także ich obecność i rosnąca sprzedaż w Europie.
+
+				Oprócz urządzeń produkowanych pod marką własną Maxcom oferujemy naszym Odbiorcom szereg innych produktów, których jesteśmy w Polsce wyłącznym dystrybutorem takich jak: MOTOROLA / baby monitory, PMR-y, monitoring domowy/, AEG / telefony przewodowe, DECT, PMR-y/.
+			</font></div>
+		
+		
+		
+
+		
+	
+		</section>
+		
+		<aside><p>
+			<nav>
+			<ul> 
+			<li><a id="currentpage" href="index.html">Start</a></li><p>
+			<li><a href="o-firmie.html">O firmie</a></li><p>
+			<li><a href="oferta.php">Oferta</a></li><p>
+			<li class="last"><a href="kontakt.html">Kontakt</a></li><p>
+			</ul>
+			</nav></p>
+		</aside>
+		</div>
+	<footer>
+		<div class="content">
+		<ul>
+		<li><strong>Kontakt:</strong> ul. Firmowa 2a, 12-345 Miasto</li>
+		<li class="center"><strong>Telefon:</strong> 12 345-67-89</li>
+		<li><strong>Mail:</strong><a href="mailto:mail@mail.pl">mail@mail.pl</a>
+		</li></font>
+		</ul>
+		<div class="copyright">
+		<p>copyright © 2015 <a href="index.html">nazwa/logo</a></p>
+		</div>
+		</div>
+	</footer>	
+</body>
+
+</html>
